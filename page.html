@@ -6,6 +6,11 @@
     window.addEventListener("beforeunload", function (e) {
         console.log(e);
     });
+
+    window.onbeforeunload = function(){
+        return "are you sure";
+
+    }
 </script>
 </body>
 </html>
